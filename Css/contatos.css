@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html{
+    --color-black-900: #272727;
+    --color-black-700: #2d2d2d;
+    --color-black-600: #131212;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+#esx{
+    color: white;
+}
+
+ul { 
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+    margin-right: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 3px;
+    padding: 0;
+    margin: 20px;
+}
+
+body {
+    line-height: 1.7;
+    background: var(--color-black-700);
+    color: white;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAKcWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDYgNzkuZGFiYWNiYiwgMjAyMS8wNC8xNC0wMDozOTo0NCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIyLjQgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMi0wMS0xN1QxODo0NzozMVoiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjItMDEtMTlUMTA6NDE6MzBaIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMi0wMS0xOVQxMDo0MTozMFoiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjRkZmE3YzdlLTljMjMtZGY0NS1hNjE3LTI1ZmIxN2MwYzI2YiIgeG1wTU06RG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjQ1NzM3ODMzLTZkNDMtZTU0Yy05ZGJlLTkzM2ZjN2QyNWQ2MSIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOmFkZWMyZmNmLTBlN2MtYmY0NC04MjdhLTYyN2IxOTdkODg1ZiIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIiB0aWZmOk9yaWVudGF0aW9uPSIxIiB0aWZmOlhSZXNvbHV0aW9uPSI3MjAwMDAvMTAwMDAiIHRpZmY6WVJlc29sdXRpb249IjcyMDAwMC8xMDAwMCIgdGlmZjpSZXNvbHV0aW9uVW5pdD0iMiIgZXhpZjpDb2xvclNwYWNlPSIxIiBleGlmOlBpeGVsWERpbWVuc2lvbj0iMTYiIGV4aWY6UGl4ZWxZRGltZW5zaW9uPSIxNiI+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImNyZWF0ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6YWRlYzJmY2YtMGU3Yy1iZjQ0LTgyN2EtNjI3YjE5N2Q4ODVmIiBzdEV2dDp3aGVuPSIyMDIyLTAxLTE3VDE4OjQ3OjMxWiIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIyLjQgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDphMTc3MmY0ZS1jZGNkLTcyNDYtYjYyNi1kNzRlNWQxMGZiYmQiIHN0RXZ0OndoZW49IjIwMjItMDEtMThUMTc6MjBaIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjIuNCAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmJkMmQ3ZDMyLTU2YWEtNTY0OS04NDdmLTBmMWYzZThmMGJkYiIgc3RFdnQ6d2hlbj0iMjAyMi0wMS0xOVQxMDo0MTozMFoiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMi40IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY29udmVydGVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJmcm9tIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AgdG8gaW1hZ2UvcG5nIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJkZXJpdmVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJjb252ZXJ0ZWQgZnJvbSBhcHBsaWNhdGlvbi92bmQuYWRvYmUucGhvdG9zaG9wIHRvIGltYWdlL3BuZyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NGRmYTdjN2UtOWMyMy1kZjQ1LWE2MTctMjVmYjE3YzBjMjZiIiBzdEV2dDp3aGVuPSIyMDIyLTAxLTE5VDEwOjQxOjMwWiIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIyLjQgKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpiZDJkN2QzMi01NmFhLTU2NDktODQ3Zi0wZjFmM2U4ZjBiZGIiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpiNTQwNjllOC1iYmI1LWJhNGYtOGQ0Ny1kMWM2OWIwZDEwNDQiIHN0UmVmOm9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDphZGVjMmZjZi0wZTdjLWJmNDQtODI3YS02MjdiMTk3ZDg4NWYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7hJkGIAAAAgUlEQVQ4jaWTSwqAMAwFxxp15ff+VxQ/O1GsGwUpttr4IMuZFJqHMUIglWSFWGvxjQnADdBu67KFNvgE9TmveRLU5/ZPcQVRsCuIhu8CFQwgQAeUGvh6QaKFL0EPTH8EAKNWcv8FlcS9g2jJ0yVGSXxdGIH5iyDU5QHYU8kF8DbyAFHyKD3LdWDGAAAAAElFTkSuQmCC);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--color-black-900);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 4rem;
+    padding-left: 0;
+    top: 0;
+    box-shadow: 1px 1px 4px, var(--color-black-600);
+}
+
+#informacoes {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15rem;
+}
+
+.box {
+    width: 500px;
+    height: 350px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box img{
+    filter: blur(3px);
+}
+
+.text h2{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+.text div{
+    margin: 10px;
+    margin-top: 60px;
+}
+
+.btn {
+    position: absolute;
+    width: 155px;
+    height: 50px;
+  }
+  
+  .btn a {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.051);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(250, 52, 52, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+  }
+  
+  .btn:hover a {
+    z-index: 1;
+    letter-spacing: 3px;
+  }
+  .btn a:before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.149), transparent);
+    transform: skewX(45deg);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+  }
+  
+  a:hover::before {
+    z-index: 1;
+    transform: skewX(45deg) translateX(200%);
+    transition-delay: 0s;
+  }
+  
+  .btn:before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--clr-glow);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+    z-index: 1;
+  }
+  
+  .btn:hover::before {
+    z-index: 1;
+    bottom: 0px;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+  }
+  
+  
+  
+  .btn:nth-child(1):before,
+  .btn:nth-child(1):after {
+    background: var(--clr);
+    box-shadow: 0 0 5px var(--clr), 0 0 15px var(--clr), 0 0 30px var(--clr),
+      0 0 60px var(--clr);
+  }
+  
+  .btn:nth-child(2):before,
+  .btn:nth-child(2):after {
+    background: var(--clr);
+    box-shadow: 0 0 5px var(--clr), 0 0 15px var(--clr), 0 0 30px var(--clr),
+      0 0 60px var(--clr);
+  }
+  
+  .btn:nth-child(3):before,
+  .btn:nth-child(3):after {
+    background: var(--clr);
+    box-shadow: 0 0 5px var(--clr), 0 0 15px var(--clr), 0 0 30px var(--clr),
+      0 0 60px var(--clr);
+  }
+
+.container-img{
+    border-radius: 30px;
+    animation: slide 16s infinite;
+    display: flex;
+    width: 100%;
+    height: 100%;
+} 
+
+.container-img:hover{
+    filter: blur(3px);
+}
+
+@keyframes slide{
+    0% {transform: translateX(-13%);}
+    25% {transform: translateX(-13%);}
+    30% {transform: translateX(-140%);}
+    50% {transform: translateX(-140%);}
+    55% {transform: translateX(-260%);}
+    75% {transform: translateX(-260%);}
+    80% {transform: translateX(-140%);}
+    95% {transform: translatex(-140%);}
+    100% {transform: translateX(-13%);}
+}
+
+

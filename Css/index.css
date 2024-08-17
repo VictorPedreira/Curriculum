@@ -1,0 +1,334 @@
+html{
+    --color-black-900: #272727;
+    --color-black-700: #2d2d2d;
+    --color-black-600: #131212;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+ul { 
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+    margin-right: 10px;
+}
+
+body {
+    color: white;
+    background-color: var(--color-black-700);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--color-black-900);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 4rem;
+    padding-left: 0;
+    top: 0;
+    box-shadow: 1px 1px 4px, var(--color-black-600);
+}
+
+#informacoes {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15rem;
+}
+
+#infos {
+    margin: 20px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#imgemperfil{  
+    margin: 20px;
+    margin-right: 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+#boxtag {
+    margin-right: 20px;
+    position: absolute;
+    background-color: #692d85;
+    height: 250px;
+    width: 350px;
+    align-items: center;
+    font-size: 20px;
+    z-index: -1;
+    display: none;
+    transition: all 1s;
+    border-radius: 8px 8px 8px;
+}
+
+#resumo {
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    display: flex;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 3px;
+    padding: 0;
+    margin: 20px;
+}
+
+
+img {
+    object-fit: cover;
+}
+
+
+
+main img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #692d85;
+    left: calc(50% - 75px);
+    cursor: pointer;
+}
+
+#back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    display: flex;
+    justify-content: row;
+
+}
+
+#aboutme{
+    top: 60rem;
+    position: absolute;
+    background-color: var(--color-black-900);
+    width: 100%;
+    height: 20rem;
+    display: flex;
+}
+
+#aboutme h2{
+    display: flex;
+    position: inherit;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+#aboutme p{
+    top: 30rem;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: 50px;
+}
+
+#formação{
+    top: 80rem;
+    position: absolute;
+    background-color: var(--color-black-500);
+    width: 100%;
+    height: 20rem;
+    display: flex;
+}
+
+#formação h2{
+    display: flex;
+    position: inherit;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+#formação p{
+    position: relative;
+    top: 5rem;
+    align-items: center;
+    text-align: center;
+    display: inline;
+    margin: 50px;
+    text-align: justify;
+}
+
+#cursos{
+    top: 100rem;
+    position: absolute;
+    background-color: var(--color-black-900);
+    width: 100%;
+    height: 20rem;
+    display: flex;
+}
+
+#cursos h2{
+    display: flex;
+    position: inherit;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+#cursos p{
+    top: 30rem;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: 50px;
+}
+
+#buttonsobre{
+    animation: scrollInfinito 10s linear infinite;
+}
+
+#formação a{
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+#formação a:hover {
+    transform: scale(2);
+    color: #692d85;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+
+}
+
+#icons{
+    background-color: var(--color-black-900);
+    width: 100%;
+    height: 1rem;
+    top: 120rem;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+#icons p {
+    margin-top: 5px;
+}
+
+#icons img {
+    width: 40px;
+    height: 40px;
+}
+
+#twitter{
+    width: 50px;
+}
+
+
+@media(max-width: 1100px) {
+    #informacoes{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+    }
+
+    #infos {
+        margin: 20px;
+        margin-left: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #imgemperfil{  
+        margin: 20px;
+        margin-left: 5%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    #boxtag {
+        margin-left: .09%;
+        top: 95px;
+        margin-right: 0px;
+        position: absolute;
+        background-color: #692d85;
+        height: 300px;
+        width: 245px;
+        align-items: center;
+        font-size: 20px;
+        z-index: -1;
+        display: none;
+        transition: all 1s;
+        border-radius: 8px 8px 8px;
+    }
+    
+    #resumo {
+        flex-direction: column;
+        align-items: start;
+        padding-top: 150px;
+        text-align: start;
+        display: none;
+    }
+
+    #aboutme h2{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    #aboutme p{
+        font-size: 15px;
+    }
+
+    #formação h2{
+        font-size: 20px;
+    }
+    
+    #formação p{
+        font-size: 15px;
+    }
+
+    #cursos h2{
+        font-size: 20px;
+    }
+    
+    #cursos p{
+        font-size: 15px;
+    }
+
+    #meucurriculo{
+        font-size: 25px;
+    }
+
+}

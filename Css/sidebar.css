@@ -1,0 +1,74 @@
+.btn-icon-header{
+    background-color:transparent;
+    color: #692d85;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 1100px){
+    .btn-icon-header{
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        text-align: start;
+        padding: 20px;
+    }
+
+    #meucurriculo{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    header{
+        justify-content: unset;
+        align-items: center;
+        display: flex;
+    }
+
+    #infoabout{
+        z-index: 1;
+        flex-direction: column;
+        display: none;
+        position: absolute ;
+        top: 0;
+        background-color: var(--color-black-900);
+        height: 100%;
+        width: 35vh;
+        padding: 1em;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .buttonspc{
+        transition-duration: 0.5s;
+    }
+
+    .buttonspc:hover{
+        color: #692d85;
+        cursor: pointer;
+        transform: translateX(20px);
+    }
+
+    #buttonbars{
+        transition-duration: 0.5s;
+    }
+
+    #buttonbars:hover{
+        color: #cb6ff3;
+        cursor: pointer;
+        transform: translateX(10px);
+    }
+
+    #buttonx{
+        transition-duration: 0.5s;
+    }
+
+    #buttonx:hover{
+        color: #cb6ff3;
+        cursor: pointer;
+        transform: scale(1.5);
+    }
+
+}   
